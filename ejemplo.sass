@@ -1,0 +1,34 @@
+@import parcial
+  
+=transform($property)
+  -webkit-transform: $property
+  -ms-transform: $property
+  transform: $property
+
+=cuadrado($lado) 
+  width: $lado
+  height: calc($lado * 3)
+
+.box
+  +transform(rotate(30deg))
+
+.cuadrado
+  +cuadrado(20px)
+
+
+nav
+  ul
+    margin: 0
+    padding: 0
+    list-style: none
+
+  li
+    display: inline-block
+    width: 200px
+
+  a
+    display: block
+    padding: 6px 12px
+    text-decoration: none
+
+
